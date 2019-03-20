@@ -20,6 +20,22 @@ url_paths = {
 
 ip_slices = [134,142,153,45,245,250,18,98,34,64,23,35,13,53,63,75,12,65]
 
+http_referers = [
+    "http://www.baidu.com/s?wd={query}",
+    "https://www.sogou.com/web?query={query}",
+    "http://cn.bing.com/search?q={query}",
+    "https://search.yahoo.com/search?p={query}",
+]
+
+search_keyword=[
+    "Spark SQL",
+    "Spark Core",
+    "Spark Streaming",
+    "Storm",
+    "Flink",
+    "Hadoop",
+]
+
 def sample_url():
     return random.sample(url_paths,1)[0]
 
